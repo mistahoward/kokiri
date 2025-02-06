@@ -1,9 +1,16 @@
+import { Router } from "../../lib/electron-router-dom";
+import { Route } from "react-router-dom"
+import TestingComponent from "./components/Testing";
+
 function App(): JSX.Element {
 
 	return (
-		<div>
-			Hellow World
-		</div>
+		<Router main={
+			<>
+				<Route path="/" element={<TestingComponent />} />
+			</>
+		}
+		/>
 	);
 }
 
