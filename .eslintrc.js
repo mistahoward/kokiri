@@ -1,10 +1,15 @@
 module.exports = {
+	settings: {
+		react: {
+			version: "detect"
+		}
+	},
 	env: {
 		browser: true,
 		es2021: true,
 	},
-	plugins: ["react", "@typescript-eslint", "@stylistic"],
-	extends: ["plugin:react/recommended", "airbnb",
+	plugins: ["@typescript-eslint", "@stylistic"],
+	extends: ["plugin:react/recommended",
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended", "plugin:react/jsx-runtime",
 		"@electron-toolkit/eslint-config-ts/recommended",
@@ -23,7 +28,6 @@ module.exports = {
 		"react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
 		"import/extensions": "off",
 		"import/no-unresolved": "off",
-		"react/jsx-indent": "off",
-		"react/jsx-closing-tag-location": "off",
+		"@stylistic/jsx-indent": ["error", "tab", { indentLogicalExpressions: true}],
 	},
 };
