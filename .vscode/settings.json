@@ -1,7 +1,7 @@
 {
-  "cSpell.words": [
-	"kokiri"
-  ],
-  "editor.tabSize": 4,
-  "editor.formatOnSave": true
+	"cSpell.words": ["kokiri"],
+	"editor.tabSize": 4,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }

@@ -20,8 +20,7 @@ function App(): JSX.Element {
 					<a
 						href="https://electron-vite.org/"
 						target="_blank"
-						rel="noreferrer"
-					>
+						rel="noreferrer">
 						Documentation
 					</a>
 				</div>

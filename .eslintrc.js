@@ -1,17 +1,19 @@
 module.exports = {
 	settings: {
 		react: {
-			version: "detect"
-		}
+			version: "detect",
+		},
 	},
 	env: {
 		browser: true,
 		es2021: true,
 	},
 	plugins: ["@typescript-eslint", "@stylistic"],
-	extends: ["plugin:react/recommended",
+	extends: [
+		"plugin:react/recommended",
 		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended", "plugin:react/jsx-runtime",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/jsx-runtime",
 		"@electron-toolkit/eslint-config-ts/recommended",
 	],
 	parser: "@typescript-eslint/parser",
@@ -28,6 +30,17 @@ module.exports = {
 		"react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
 		"import/extensions": "off",
 		"import/no-unresolved": "off",
-		"@stylistic/jsx-indent": ["error", "tab", { indentLogicalExpressions: true}],
+		"@stylistic/jsx-indent": [
+			"error",
+			"tab",
+			{ indentLogicalExpressions: true },
+		],
+		"@stylistic/jsx-closing-bracket-location": [
+			"error",
+			{
+				nonEmpty: "after-props",
+				selfClosing: "tag-aligned",
+			},
+		],
 	},
 };
